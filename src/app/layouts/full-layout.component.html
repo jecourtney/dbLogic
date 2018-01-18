@@ -1,0 +1,78 @@
+<header class="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler hidden-lg-up" type="button" mobile-nav-toggle>&#9776;</button>
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav navbar-nav hidden-md-down">
+            <li class="nav-item">
+                <a class="nav-link navbar-toggler sidebar-toggle" href="#">&#9776;</a>
+            </li>
+        </ul>
+        <!-- <div class="hidden-md-down pull-right">
+            <span>{{userName}}&nbsp;&nbsp;&nbsp;</span>
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/contactus']">Contact Us &nbsp;&nbsp;&nbsp;</a>
+            <a class="nav-link" routerLinkActive="active" [routerLink]="['/location']">Locations &nbsp;&nbsp;&nbsp;</a>
+        </div> -->
+    </div>
+</header>
+
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']">Welcome</a>
+            </li>
+            <!-- <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle">Family of Companies</a>
+                <ul class="nav-dropdown-items">
+                <li class = "nav-item">
+                    <a class="nav-link" href="http://www.mcgillairclean.com">&nbsp;&nbsp;AirClean</a>
+                </li>
+                <li class = "nav-item">
+                    <a class="nav-link" href="http://www.mcgillairflow.com">&nbsp;&nbsp;AirFlow</a>
+                </li>
+                <li class = "nav-item">
+                    <a class="nav-link" href="http://www.mcgillairpressure.com">&nbsp;&nbsp;AirPressure</a>
+                </li>
+                <li class = "nav-item">
+                    <a class="nav-link" href="http://www.mcgillairsilence.com">&nbsp;&nbsp;AirSilence</a>
+                </li>
+                <li class = "nav-item">
+                    <a class="nav-link" href="http://www.mcgillairseal.com">&nbsp;&nbsp;AirSeal</a>
+                </li>
+                <div class="dropdown-divider"></div>
+                </ul>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/forsale']">For Sale</a>
+            </li>
+            <!-- <li *ngIf="showEmploymentApp" class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/employ']">Employment App</a>
+            </li> -->
+        </ul>
+    </nav>
+</div>
+
+<!-- Main content -->
+<main class="main">
+
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+        <breadcrumbs></breadcrumbs>
+    </ol>
+
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+    <!-- /.conainer-fluid -->
+</main>
+
+<footer class="footer">
+    <span>
+        <p class="text-xs-center">
+            &copy; {{year}} <a href="http://dblogiclnet">dbLogic, Joe Courtney</a>
+        </p>
+    </span>
+    <span class="float-xs-right">
+        
+    </span>
+</footer>
